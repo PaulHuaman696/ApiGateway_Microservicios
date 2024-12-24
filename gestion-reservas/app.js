@@ -4,6 +4,7 @@ const connectDB = require('./src/config/db');
 const reservasRoute = require('./src/routes/reservas');
 const mesasRoute = require('./src/routes/mesas');
 const cors = require('cors');
+const IPLocal = require('./src/utils/obtenerIpAsociado');
 
 dotenv.config();
 
@@ -13,7 +14,7 @@ app.use(express.json());
 
 
 app.use(cors({
-  origin: 'http://localhost:3001',  // Asegúrate de que esta URL apunte a tu frontend
+  origin: `http://${IPLocal}:3001`,  // Asegúrate de que esta URL apunte a tu frontend
 }));
 
 
