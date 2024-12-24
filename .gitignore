@@ -4,5 +4,5 @@
 /gestion-reservas/deployment/.terraform
 /ms_clientes/node_modules
 /grafico-service/node_modules
-frontend\node_modules
+/ms-frontend\node_modules
 Arquitectura del Sistema de Reservas para Restaurantes.docx
